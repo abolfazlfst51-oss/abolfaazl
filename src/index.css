@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Sahel';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sahel';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --app-font: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--app-font);
+  }
+}
+
+/* Custom scrollbars for clean minimal feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
+
+/* Full Sepia reading theme styling */
+html.theme-sepia,
+html.theme-sepia body,
+html.theme-sepia #root {
+  background-color: #f6f0e2 !important;
+  color: #3b2f23 !important;
+}
+
+html.theme-sepia .bg-neutral-50,
+html.theme-sepia .bg-slate-950,
+html.theme-sepia .bg-slate-900 {
+  background-color: #f6f0e2 !important;
+}
+
+html.theme-sepia .bg-white {
+  background-color: #eee4ce !important;
+}
+
+html.theme-sepia .bg-neutral-50\/70,
+html.theme-sepia .bg-neutral-50\/60,
+html.theme-sepia .bg-slate-800\/40,
+html.theme-sepia .bg-slate-800\/90 {
+  background-color: #e4d8be !important;
+}
+
+html.theme-sepia .border-neutral-200,
+html.theme-sepia .border-neutral-300,
+html.theme-sepia .border-neutral-700,
+html.theme-sepia .border-neutral-800 {
+  border-color: #d6c7a7 !important;
+}
+
+html.theme-sepia .text-neutral-900,
+html.theme-sepia .text-neutral-800,
+html.theme-sepia .text-neutral-100 {
+  color: #36291c !important;
+}
+
+html.theme-sepia .text-neutral-700,
+html.theme-sepia .text-neutral-600,
+html.theme-sepia .text-neutral-400,
+html.theme-sepia .text-neutral-300 {
+  color: #63523f !important;
+}
+
+/* Card entrance fade-in animations for smooth and soft feel */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card-fade-in {
+  animation: cardFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

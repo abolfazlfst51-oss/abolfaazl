@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix برنامه‌ریز هفتگی هوشمند و دستیار مطالعه",
+  "description": "برنامه اختصاصی مدیریت برنامه هفتگی و کارگاه‌های دهم هنرستان کامپیوتر (تولید محتوا، طراحی وب، سخت‌افزار) همراه با یادآور هوشمند مطالعه و OCR",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

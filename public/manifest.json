@@ -1,0 +1,19 @@
+{
+  "name": "برنامه‌ریز هفتگی هوشمند و دستیار مطالعه",
+  "short_name": "برنامه‌ریز هوشمند",
+  "description": "مدیریت برنامه هفتگی، یادآور هوشمند مطالعه، یادداشت صوتی، تشخیص متن و تقویم",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "dir": "rtl",
+  "lang": "fa",
+  "icons": [
+    {
+      "src": "/src/assets/images/app_logo_modern_1790334745256.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
